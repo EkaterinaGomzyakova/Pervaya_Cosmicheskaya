@@ -1,10 +1,22 @@
 @media all and (max-width: 1320px) {
+  /* оптимизировать */
   header {
     width: 97.727vw;
   }
   .top {
     width: 97.727vw;
   }
+  header, .top, .slider, .what, .way, .taglines, .welcome, .more, .first_lesson, .map, footer {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .item {
+    width: 48%;
+
+  }
+}
+@media all and (max-width: 1290px) {
+
 }
 @media all and (max-width: 1024px) {
   h1 {
@@ -30,6 +42,9 @@
   .block_slide {
     flex-direction: column;
     gap: 20px;
+  }
+  .item {
+    width: 100%;
   }
   h2 {
     font-size: 24px;

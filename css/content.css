@@ -15,11 +15,15 @@ header {
   height: 100px;
   margin: 0 auto;
 }
-section, footer {
+section {
   max-width: 1290px;
+  margin: 0 auto 120px;
 }
 footer {
   display: flex;
+  max-width: 1290px;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 .menu_items {
   display: inline-flex;
@@ -219,7 +223,7 @@ button {
 .slider {
   box-sizing: border-box;
   max-width: 1290px;
-  margin: 30px auto 0;
+  margin: 30px auto 120px;
   max-height: 300px;
   /* padding: 30px 80px; */
 }
@@ -312,9 +316,6 @@ button {
   gap: 160px;
   margin-left: 30px;
 }
-.what, .way, .taglines, .welcome, .more, .first_lesson, .map, footer {
-  margin: 120px auto 0;
-}
 /* работает!!! */
 .welcome h2:nth-of-type(2) {
   color: var(--blue);
@@ -323,7 +324,7 @@ button {
   display: flex;
   align-items: flex-start;
   align-content: flex-start;
-  gap: 23px 30px;
+  gap: 10px 10px;
   flex-wrap: wrap;
   margin-top: 35px;
 }
@@ -381,18 +382,21 @@ button {
 .three {
   margin: 100px auto 0;
 }
+/* отступ */
 .welcome_items {
   display: flex;
   align-items: center;
   align-content: center;
-  gap: 30px;
+  gap: 10px;
   flex-wrap: wrap;
+  margin-top: 35px;
 }
 .item {
-  width: 630px;
+  width: 49.612%;
   height: 505px;
   border-radius: 20px;
 }
+
 .teams {
   background: url('../images/teams.png');
 }
@@ -400,7 +404,7 @@ button {
   background: url('../images/telegram.png');
 }
 .teachers {
-  width: 1290px;
+  width: 100%;
   background: url('../images/teachers.png');
 }
 .folders {
@@ -415,6 +419,10 @@ button {
 .comp {
   background: url('../images/comp.png');
 }
+.teams, .telegram, .teachers, .folders, .memo, .merch, .comp {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .text {
   display: flex;
   max-width: 370px;
@@ -422,9 +430,6 @@ button {
   padding: 20px 30px;
   border-radius: 20px;
   background: var(--light);
-}
-.welcome_items {
-  margin-top: 35px;
 }
 .prog, .modeling, .des {
   display: flex;
@@ -462,8 +467,8 @@ button {
 .info {
   display: flex;
   gap: 100px;
-  max-width: 1290px;
-  height: 370px;
+  width: 100%;
+  min-height: 370px;
   margin-top: -40px;
   border-radius: 20px;
   background: var(--light);
@@ -498,8 +503,8 @@ button {
   gap: 30px;
 }
 .offer, .form {
-  box-sizing: border-box;
-  width: 630px;
+  /* box-sizing: border-box; */
+  max-width: 630px;
   height: 510px;
   padding: 30px;
   border-radius: 20px;
@@ -527,27 +532,17 @@ button {
   color: white;
 }
 .name {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   display: flex;
   width: 570px;
   height: 80px;
-  margin-top: 10px;
+  margin: 10px auto 0;
   padding: 28px 30px;
   align-items: center;
   border-radius: 10px;
   border: 1px solid #E1E1E1;
   background: rgba(243, 243, 243, 0.20);
 }
-input::placeholder {
-  color: var(--white-transparent, rgba(255, 255, 255, 0.40));
-  /* button_text */
-  font-family: Onest;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
 .button_main {
   display: flex;
   justify-content: center;
@@ -560,6 +555,17 @@ input::placeholder {
   border-radius: 20px;
   color: var(--blue);
 }
+input::placeholder {
+  color: var(--white-transparent, rgba(255, 255, 255, 0.40));
+  /* button_text */
+  font-family: Onest;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
 
 * {
   box-sizing: border-box;
