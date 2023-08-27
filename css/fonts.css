@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Onest';
+  src: url('../fonts/OnestRegular1602-hint.ttf');
+  src: url('../fonts/OnestRegular1602-hint.woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Onest';
+  src: url('../fonts/OnestMedium1602-hint.ttf');
+  src: url('../fonts/OnestMedium1602-hint.woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Onest';
+  src: url('../fonts/OnestBold1602-hint.ttf');
+  src: url('../fonts/OnestBold1602-hint.woff');
+  font-weight: 700;
+  font-style: normal;
+}
