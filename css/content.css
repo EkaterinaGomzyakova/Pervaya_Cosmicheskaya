@@ -359,6 +359,16 @@ button {
   overflow-x: scroll;
   white-space:nowrap;
 }
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+.flips::-webkit-scrollbar {
+  display: none;
+}
+
+/* Скрываем scrollbar для IE, Edge и Firefox */
+.flips {
+  -ms-overflow-style: none;  /* IE и Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .flip_card_front .tags_slide {
   margin-top: 15px;
 }
