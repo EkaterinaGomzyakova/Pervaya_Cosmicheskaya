@@ -133,7 +133,7 @@ button {
   padding: 27px 60px;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 50%;
   background: var(--white);
 }
 .lines {
@@ -384,19 +384,17 @@ button {
 }
 /* отступ */
 .welcome_items {
-  display: flex;
-  align-items: center;
-  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 10px;
-  flex-wrap: wrap;
   margin-top: 35px;
 }
 .item {
-  width: 49.612%;
+  position: relative;
   height: 505px;
   border-radius: 20px;
 }
-
 .teams {
   background: url('../images/teams.png');
 }
@@ -406,6 +404,7 @@ button {
 .teachers {
   width: 100%;
   background: url('../images/teachers.png');
+  grid-column: span 2;
 }
 .folders {
   background: url('../images/folders.png');
@@ -425,11 +424,15 @@ button {
 }
 .text {
   display: flex;
+  position: absolute;
   max-width: 370px;
-  margin: 20px;
+  left: 20px;
+  bottom: 20px;
   padding: 20px 30px;
   border-radius: 20px;
-  background: var(--light);
+  background: var(--light-transparent, rgba(240, 243, 255, 0.20));
+  backdrop-filter: blur(10px);
+  color: var(--white);
 }
 .prog, .modeling, .des {
   display: flex;

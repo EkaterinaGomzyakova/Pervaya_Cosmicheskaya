@@ -10,10 +10,10 @@
     margin-left: 30px;
     margin-right: 30px;
   }
-  .item {
+  /* .item {
     width: 48%;
 
-  }
+  } */
 }
 @media all and (max-width: 1290px) {
 
@@ -28,10 +28,9 @@
   .contact {
     display: none;
   }
-  .block_text {
-    width: 32.031vw;
-    height: 10.742vw;
-  }
+  /* .block_text {
+    width: 80vw;
+  } */
 }
 @media all and (min-width: 1024px) {
   .menu_burger {
@@ -43,8 +42,12 @@
     flex-direction: column;
     gap: 20px;
   }
-  .item {
+  /* .item {
     width: 100%;
+  } */
+  .welcome_items {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
   }
   h2 {
     font-size: 24px;
