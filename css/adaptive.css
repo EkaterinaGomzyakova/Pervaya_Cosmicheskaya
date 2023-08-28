@@ -51,6 +51,7 @@
   }
   .tabs {
     flex-direction: column;
+    width: 100%;
   }
   .active {
     display: flex;

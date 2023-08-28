@@ -457,7 +457,7 @@ button {
 .prog, .modeling, .des {
   display: flex;
   box-sizing: border-box;
-  max-width: 410px;
+  /* max-width: 410px; */
   justify-content: center;
   align-items: center;
   border-radius: 20px;
@@ -472,7 +472,7 @@ button {
 }
 .unactive {
   display: flex;
-  width: 410px;
+  min-width: 410px;
   height: 70px;
   padding: 23px 29px;
   justify-content: center;
@@ -485,6 +485,14 @@ button {
   display: flex;
   gap: 30px;
   margin-top: 35px;
+  overflow: hidden;
+  overflow-x: scroll;
+  white-space:nowrap;
+}
+/* не ограничивать  flips контейнер чтобы контент не обрезался */
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+.tabs::-webkit-scrollbar {
+  display: none;
 }
 .info {
   display: flex;
