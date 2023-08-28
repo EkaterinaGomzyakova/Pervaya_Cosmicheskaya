@@ -30,6 +30,9 @@
     display: none;
   }
 }
+@media all and (min-width: 834px) {
+
+}
 @media all and (max-width: 744px) {
   .block_slide {
     flex-direction: column;
@@ -37,7 +40,8 @@
   }
   .welcome_items {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-auto-flow: column;
   }
   .first_lesson {
     grid-template-columns: 1fr;
@@ -60,6 +64,9 @@
   }
   .info {
     margin-top: 20px;
+    flex-direction: column;
+  }
+  .pic {
     flex-direction: column;
   }
 }
@@ -93,8 +100,8 @@
   .contact {
     display: none;
   }
-  .tabs {
+  /* .tabs {
     flex-direction: column;
     width: 100%;
-  }
+  } */
 }
