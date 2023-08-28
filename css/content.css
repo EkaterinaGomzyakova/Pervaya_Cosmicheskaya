@@ -106,6 +106,8 @@ button {
   max-width: 280px;
   height: 65px;
   margin: 35px auto 0;
+  /* не работает */
+  text-decoration: none;
 }
 .top {
   /* чтобы работали postiton absolute внутри */
