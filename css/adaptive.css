@@ -30,9 +30,6 @@
     display: none;
   }
 }
-@media all and (min-width: 834px) {
-
-}
 @media all and (max-width: 744px) {
   .block_slide {
     flex-direction: column;

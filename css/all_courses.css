@@ -1,3 +1,37 @@
+section {
+  margin: 120px auto 0;
+}
+.age {
+  margin: 35px auto 0;
+}
+.tabs {
+  max-width: 330px;
+  
+}
 .top {
   height: 400px;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.tags_slide {
+  flex-direction: row;
+  max-width: 700px;
+}
+/* карточка направления со схемой */
+.direction {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 430px;
+  margin-top: 35px;
+  padding: 50px;
+  background: var(--light);
+  border-radius: 20px;
+}
+@media all and (max-width: 834px) {
+  .heading {
+    flex-direction: column;
+  }
 }
